@@ -551,6 +551,57 @@ window.StickerUtils = {
     }
 };
 
+// Copy CA Address Function
+function copyCA() {
+    const caAddress = document.getElementById('caAddress');
+    const copyHint = document.getElementById('copyHint');
+    const addressText = caAddress.textContent;
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(addressText).then(() => {
+        // Show success feedback
+        const originalText = copyHint.textContent;
+        copyHint.textContent = 'Copied!';
+        copyHint.style.color = '#10b981';
+        copyHint.style.fontWeight = '600';
+        
+        // Animate the address
+        caAddress.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+        caAddress.style.color = 'white';
+        caAddress.style.transform = 'scale(1.05)';
+        
+        // Reset after 2 seconds
+        setTimeout(() => {
+            copyHint.textContent = originalText;
+            copyHint.style.color = '';
+            copyHint.style.fontWeight = '';
+            caAddress.style.background = '';
+            caAddress.style.color = '';
+            caAddress.style.transform = '';
+        }, 2000);
+    }).catch(err => {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = addressText;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+            document.execCommand('copy');
+            copyHint.textContent = 'Copied!';
+            copyHint.style.color = '#10b981';
+            setTimeout(() => {
+                copyHint.textContent = 'Click to copy';
+                copyHint.style.color = '';
+            }, 2000);
+        } catch (e) {
+            console.error('Failed to copy:', e);
+        }
+        document.body.removeChild(textArea);
+    });
+}
+
 // Add smooth scrolling for all anchor links
 document.addEventListener('DOMContentLoaded', () => {
     // Add loading animation
