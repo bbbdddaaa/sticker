@@ -15,14 +15,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="sticker-icon">📄</span>
+                <!-- <span class="sticker-icon">📄</span> -->
                 <span class="logo-text">Sticker</span>
             </div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#tokenomics">Tokenomics</a>
                 <a href="#sbt">SBT</a>
-                <a href="#feed">Live Feed</a>
                 <a href="#dao">DAO</a>
             </div>
         </div>
@@ -41,36 +40,22 @@
                     Transform every transaction into a force for good.
                 </p>
                 <div class="hero-buttons">
-                    <button class="btn-primary" id="tradeBtn">
+                    <button class="btn-primary" onclick="window.location.href='https://dexscreener.com/solana/sticker-stkr'">
                         <span class="btn-icon">💝</span>
                         Trade to Donate
                     </button>
-                    <button class="btn-secondary" id="feedBtn">
-                        <span class="btn-icon">📊</span>
-                        Live Donation Feed
-                    </button>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" id="totalDonated">$0</span>
-                        <span class="stat-label">Total Donated</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="activeUsers">0</span>
-                        <span class="stat-label">Active Users</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="charitiesHelped">0</span>
-                        <span class="stat-label">Charities Helped</span>
-                    </div>
                 </div>
             </div>
             <div class="hero-visual">
+                <div class="hero-visual-header">
+                    <h3 class="visual-title">Sticker</h3>
+                </div>
                 <div class="sticker-animation">
                     <div class="sticker sticker-1">💝</div>
                     <div class="sticker sticker-2">🌍</div>
                     <div class="sticker sticker-3">❤️</div>
                     <div class="sticker sticker-4">🤝</div>
+                    <div class="sticker sticker-5">☮️</div>
                 </div>
             </div>
         </div>
@@ -103,7 +88,6 @@
                         <ul class="feature-list">
                             <li>🔒 <strong>Transparent:</strong> All donations are recorded on-chain</li>
                             <li>🤝 <strong>Community-driven:</strong> DAO votes on charity recipients</li>
-                            <li>🎯 <strong>Verified:</strong> Only vetted charitable organizations</li>
                             <li>⚡ <strong>Automatic:</strong> No manual intervention required</li>
                         </ul>
                     </div>
