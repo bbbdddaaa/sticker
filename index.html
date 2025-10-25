@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticker ($STKR) - Every Trade Donates</title>
-    <meta name="description" content="Blockchain philanthropy platform inspired by Vitalik Buterin's vision. Every trade automatically donates to charity.">
+    <meta name="description"
+        content="Blockchain philanthropy platform inspired by Vitalik Buterin's vision. Every trade automatically donates to charity.">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -37,7 +41,7 @@
                     <span class="title-accent">Donates</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Inspired by Vitalik Buterin's vision of blockchain philanthropy. 
+                    Inspired by Vitalik Buterin's vision of blockchain philanthropy.
                     Transform every transaction into a force for good.
                 </p>
                 <div class="hero-buttons">
@@ -87,7 +91,7 @@
                 <div class="about-text">
                     <div class="vitalik-quote">
                         <blockquote>
-                            "The blockchain space has the potential to be a force for good in the world, 
+                            "The blockchain space has the potential to be a force for good in the world,
                             but only if we actively work to make it so."
                         </blockquote>
                         <cite>— Vitalik Buterin, "A Note on Charity" (2017)</cite>
@@ -95,9 +99,9 @@
                     <div class="about-description">
                         <h3>Sticker's Implementation</h3>
                         <p>
-                            Sticker ($STKR) brings Vitalik's vision to life by automatically donating 
-                            a percentage of every transaction to verified charitable organizations. 
-                            Our smart contracts ensure transparency, while our DAO governance 
+                            Sticker ($STKR) brings Vitalik's vision to life by automatically donating
+                            a percentage of every transaction to verified charitable organizations.
+                            Our smart contracts ensure transparency, while our DAO governance
                             lets the community decide which causes to support.
                         </p>
                         <ul class="feature-list">
@@ -117,7 +121,7 @@
                         <div class="flow-arrow">→</div>
                         <div class="flow-step">
                             <div class="step-icon">⚙️</div>
-                            <div class="step-text">Auto Donation</div>
+                            <div class="step-text">Donate to Vitalik</div>
                         </div>
                         <div class="flow-arrow">→</div>
                         <div class="flow-step">
@@ -135,7 +139,8 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Tokenomics</h2>
-                <p class="section-subtitle">Built for sustainable philanthropy</p>
+                <p class="section-subtitle">All transaction rewards are automatically accumulated and distributed once
+                    per day at 00:00 UTC, with 100% of the proceeds transferred to Vitalik Buterin’s address.</p>
             </div>
             <div class="tokenomics-content">
                 <div class="tokenomics-table">
@@ -237,8 +242,8 @@
                 <div class="sbt-explanation">
                     <h3>What is a Soulbound Token?</h3>
                     <p>
-                        Soulbound Tokens (SBTs) are non-transferable digital certificates that represent 
-                        your charitable contributions. They can't be bought or sold – only earned through 
+                        Soulbound Tokens (SBTs) are non-transferable digital certificates that represent
+                        your charitable contributions. They can't be bought or sold – only earned through
                         acts of kindness on the blockchain.
                     </p>
                     <div class="sbt-features">
@@ -268,16 +273,16 @@
                 <div class="sbt-demo">
                     <div class="sbt-card" id="sbtCard">
                         <div class="sbt-header">
-                            <div class="sbt-icon">🎖️</div>
-                            <div class="sbt-title">Proof of Goodness</div>
+                            <!-- <div class="sbt-icon">🎖️</div> -->
+                            <div class="sbt-title">More Coming Soon</div>
                         </div>
                         <div class="sbt-body">
                             <div class="sbt-attribute">
-                                <span class="attr-label">Recipient:</span>
+                                <span class="attr-label">ICO额度:</span>
                                 <span class="attr-value">UNICEF</span>
                             </div>
                             <div class="sbt-attribute">
-                                <span class="attr-label">Amount:</span>
+                                <span class="attr-label">WhiteList:</span>
                                 <span class="attr-value">$50.00</span>
                             </div>
                             <div class="sbt-attribute">
@@ -298,137 +303,6 @@
         </div>
     </section>
 
-    <!-- Live Feed Section -->
-    <section class="live-feed" id="feed">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Live Donation Feed</h2>
-                <p class="section-subtitle">Real-time transparency on the blockchain</p>
-            </div>
-            <div class="feed-content">
-                <div class="feed-stats">
-                    <div class="feed-stat">
-                        <span class="stat-value" id="todayDonations">$0</span>
-                        <span class="stat-label">Donated Today</span>
-                    </div>
-                    <div class="feed-stat">
-                        <span class="stat-value" id="totalTransactions">0</span>
-                        <span class="stat-label">Transactions</span>
-                    </div>
-                    <div class="feed-stat">
-                        <span class="stat-value" id="avgDonation">$0</span>
-                        <span class="stat-label">Avg Donation</span>
-                    </div>
-                </div>
-                <div class="feed-list" id="donationFeed">
-                    <!-- Dynamic donation entries will be inserted here -->
-                </div>
-                <div class="feed-controls">
-                    <button class="btn-secondary" id="refreshFeed">Refresh Feed</button>
-                    <button class="btn-secondary" id="pauseFeed">Pause Updates</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DAO Governance Section -->
-    <section class="dao" id="dao">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">DAO Governance</h2>
-                <p class="section-subtitle">Community decides the next charity</p>
-            </div>
-            <div class="dao-content">
-                <div class="dao-info">
-                    <h3>Current Voting Round</h3>
-                    <p>
-                        Help us choose which charitable organization should receive 
-                        the next round of donations. Your vote matters!
-                    </p>
-                    <div class="voting-stats">
-                        <div class="vote-stat">
-                            <span class="vote-label">Total Votes:</span>
-                            <span class="vote-value" id="totalVotes">0</span>
-                        </div>
-                        <div class="vote-stat">
-                            <span class="vote-label">Your Voting Power:</span>
-                            <span class="vote-value" id="userVotingPower">0 STKR</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="dao-voting">
-                    <div class="voting-options">
-                        <div class="vote-option" data-charity="unicef">
-                            <div class="option-header">
-                                <div class="option-icon">🌍</div>
-                                <div class="option-info">
-                                    <h4>UNICEF</h4>
-                                    <p>Children's emergency relief</p>
-                                </div>
-                            </div>
-                            <div class="option-stats">
-                                <div class="vote-count">
-                                    <span class="count-label">Votes:</span>
-                                    <span class="count-value" id="unicefVotes">0</span>
-                                </div>
-                                <div class="vote-percentage">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" id="unicefProgress" style="width: 0%"></div>
-                                    </div>
-                                    <span class="percentage" id="unicefPercentage">0%</span>
-                                </div>
-                            </div>
-                            <button class="vote-btn" data-charity="unicef">Vote</button>
-                        </div>
-                        <div class="vote-option" data-charity="doctors">
-                            <div class="option-header">
-                                <div class="option-icon">🏥</div>
-                                <div class="option-info">
-                                    <h4>Doctors Without Borders</h4>
-                                    <p>Medical humanitarian aid</p>
-                                </div>
-                            </div>
-                            <div class="option-stats">
-                                <div class="vote-count">
-                                    <span class="count-label">Votes:</span>
-                                    <span class="count-value" id="doctorsVotes">0</span>
-                                </div>
-                                <div class="vote-percentage">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" id="doctorsProgress" style="width: 0%"></div>
-                                    </div>
-                                    <span class="percentage" id="doctorsPercentage">0%</span>
-                                </div>
-                            </div>
-                            <button class="vote-btn" data-charity="doctors">Vote</button>
-                        </div>
-                        <div class="vote-option" data-charity="environment">
-                            <div class="option-header">
-                                <div class="option-icon">🌱</div>
-                                <div class="option-info">
-                                    <h4>Environmental Defense Fund</h4>
-                                    <p>Climate change solutions</p>
-                                </div>
-                            </div>
-                            <div class="option-stats">
-                                <div class="vote-count">
-                                    <span class="count-label">Votes:</span>
-                                    <span class="count-value" id="environmentVotes">0</span>
-                                </div>
-                                <div class="vote-percentage">
-                                    <div class="progress-bar">
-                                        <div class="progress-fill" id="environmentProgress" style="width: 0%"></div>
-                                    </div>
-                                    <span class="percentage" id="environmentPercentage">0%</span>
-                                </div>
-                            </div>
-                            <button class="vote-btn" data-charity="environment">Vote</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -440,7 +314,7 @@
                         <span class="logo-text">Sticker</span>
                     </div>
                     <p class="footer-description">
-                        Making every trade a force for good. 
+                        Making every trade a force for good.
                         Inspired by Vitalik Buterin's vision of blockchain philanthropy.
                     </p>
                 </div>
@@ -450,37 +324,42 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#tokenomics">Tokenomics</a></li>
                         <li><a href="#sbt">SBT</a></li>
-                        <li><a href="#feed">Live Feed</a></li>
-                        <li><a href="#dao">DAO</a></li>
+
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul class="footer-links">
-                        <li><a href="#" target="_blank">Whitepaper</a></li>
-                        <li><a href="#" target="_blank">Smart Contract</a></li>
-                        <li><a href="#" target="_blank">GitHub</a></li>
-                        <li><a href="#" target="_blank">Discord</a></li>
+                        <li><a href="https://vitalik.eth.limo/general/2017/03/11/a_note_on_charity.html"
+                                target="_blank">Blog from Vitalik</a></li>
+                        <li><a href="https://x.com/search?q=from%3AVitalikButerin%20charity&src=typeahead_click&f=live"
+                                target="_blank">Vitalik with Charity</a></li>
+                        <li><a href="https://github.com/vbuterin/research/blob/master/charity_sim/charity_sim.py"
+                                target="_blank">Tech doc 1</a></li>
+                        <li><a href="https://github.com/vbuterin/research/blob/master/charity_sim/charity_sim_v2.py"
+                                target="_blank">Tech doc 2</a></li>
+
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Credits</h4>
                     <p class="vitalik-credit">
-                        Inspired by <a href="https://vitalik.ca/general/2017/04/22/charity.html" target="_blank">Vitalik Buterin's "A Note on Charity"</a>
+                        Inspired by <a href="https://vitalik.ca/general/2017/04/22/charity.html" target="_blank">Vitalik
+                            Buterin's "A Note On Charity Through Marginal Price Discrimination"</a>
                     </p>
                     <div class="social-links">
-                        <a href="#" target="_blank">Twitter</a>
+                        <a href="https://x.com/stickercharity" target="_blank">Twitter</a>
                         <a href="#" target="_blank">Telegram</a>
-                        <a href="#" target="_blank">Discord</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sticker ($STKR). Making blockchain philanthropy a reality.</p>
+                <p>&copy; 2025 Sticker.</p>
             </div>
         </div>
     </footer>
 
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
