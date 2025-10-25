@@ -370,6 +370,7 @@ body {
 }
 
 .sticker-1 {
+<<<<<<< HEAD
   top: 22%;
   left: 28%;
   animation-delay: 0s;
@@ -398,6 +399,35 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   animation-delay: 2s;
+=======
+    top: 8%;
+    left: 12%;
+    animation-delay: 0s;
+}
+
+.sticker-2 {
+    top: 12%;
+    right: 12%;
+    animation-delay: 0.5s;
+}
+
+.sticker-3 {
+    bottom: 12%;
+    left: 18%;
+    animation-delay: 1s;
+}
+
+.sticker-4 {
+    bottom: 8%;
+    right: 16%;
+    animation-delay: 1.5s;
+}
+
+.sticker-5 {
+    top: 45%;
+    left: 70%;
+    animation-delay: 2s;
+>>>>>>> bceec04d9bf2391be1f318b5d972be8fab21a558
 }
 
 /* Section Styles */
@@ -529,6 +559,26 @@ body {
 .tokenomics {
   padding: var(--spacing-2xl) 0;
   background: linear-gradient(135deg, #fef3c7 0%, var(--background-white) 100%);
+}
+
+/* Tokenomics header adjustments for better visual height and emphasis */
+.tokenomics .section-header {
+    padding: var(--spacing-xl) 0;
+}
+
+.tokenomics .section-title {
+    margin-bottom: var(--spacing-lg);
+}
+
+.tokenomics .section-subtitle {
+    line-height: 1.9;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: rgba(253, 230, 138, 0.18);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: inline-block;
+    max-width: 800px;
 }
 
 .tokenomics-content {
@@ -1279,6 +1329,7 @@ body {
 }
 
 @media (max-width: 480px) {
+<<<<<<< HEAD
   .container {
     padding: 0 var(--spacing-md);
   }
@@ -1308,4 +1359,40 @@ body {
     align-items: flex-start;
     gap: var(--spacing-sm);
   }
+=======
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .table-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    
+    .option-stats {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .tokenomics .section-subtitle {
+        padding: var(--spacing-sm) var(--spacing-md);
+        line-height: 1.75;
+        max-width: 100%;
+    }
+>>>>>>> bceec04d9bf2391be1f318b5d972be8fab21a558
 }
