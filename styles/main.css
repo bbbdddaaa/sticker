@@ -364,33 +364,32 @@ body {
 }
 
 .sticker-1 {
-    top: 22%;
-    left: 28%;
+    top: 8%;
+    left: 12%;
     animation-delay: 0s;
 }
 
 .sticker-2 {
-    top: 28%;
-    right: 28%;
+    top: 12%;
+    right: 12%;
     animation-delay: 0.5s;
 }
 
 .sticker-3 {
-    bottom: 28%;
-    left: 34%;
+    bottom: 12%;
+    left: 18%;
     animation-delay: 1s;
 }
 
 .sticker-4 {
-    bottom: 26%;
-    right: 34%;
+    bottom: 8%;
+    right: 16%;
     animation-delay: 1.5s;
 }
 
 .sticker-5 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 70%;
     animation-delay: 2s;
 }
 
@@ -523,6 +522,26 @@ body {
 .tokenomics {
     padding: var(--spacing-2xl) 0;
     background: linear-gradient(135deg, #FEF3C7 0%, var(--background-white) 100%);
+}
+
+/* Tokenomics header adjustments for better visual height and emphasis */
+.tokenomics .section-header {
+    padding: var(--spacing-xl) 0;
+}
+
+.tokenomics .section-title {
+    margin-bottom: var(--spacing-lg);
+}
+
+.tokenomics .section-subtitle {
+    line-height: 1.9;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: rgba(253, 230, 138, 0.18);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px var(--shadow-light);
+    display: inline-block;
+    max-width: 800px;
 }
 
 .tokenomics-content {
@@ -1297,5 +1316,11 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-sm);
+    }
+
+    .tokenomics .section-subtitle {
+        padding: var(--spacing-sm) var(--spacing-md);
+        line-height: 1.75;
+        max-width: 100%;
     }
 }
